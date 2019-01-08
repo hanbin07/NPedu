@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NP-Definition</title>
+</head>
+<body>
+<script language="Javascript">
+    function openWin() {
+        document.all['divpop'].style.visibility = "visible";
+    }
+    function closeWin() {
+        document.all['divpop'].style.visibility = "hidden";
+    }
+</script>
+<div id="divpop" style="position:absolute;left:500px;top:190px;z-index:200; visibility: hidden;">
+    <table width=300 height=400 cellpadding=2 cellspacing=0>
+        <tr>
+            <td style="border:1px #666666 solid" height=360 align=center bgcolor=white>
+                결정문제란 계산문제로 문제가 인스턴스가 주어졌을때 답이 예/아니오 로 도출되는 것을 의미한다.
+            </td>
+        </tr>
+        <tr>
+            <td align=right bgcolor=white>
+                <a href="javascript:closeWin();"><B>[닫기]</B></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<p style="text-align: center;">
+
+    <a class='pull-left title' href="index.html"><img src="image/Title.png" width="20%"></a><br>
+    NP는 맞는 답을 주면, 그것이 맞다는 것의 검증이 효율적으로 이루어진다.<br>
+    NP에는 P와 NPC가 포함되어 있으며 P와 NP가 같은지는 밝혀지지 않았다.<br><br>
+    NP는 <a href="javascript:openWin();">결정문제</a>를 다룬다.<br>
+
+   <br> <a ><img src="image/np_structure.png" width="20%"></a><br>
+</p>
+<a class='pull-left title' href="menu.html"><img src="image/back_button.png" width="5%"></a><br>
+</body>
+</html>
