@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <title>NP-Examples</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $("#jb-sidebar").load("SideBar.html");  // 원하는 파일 경로를 삽입하면 된다
+            $("#jb-footer").load("footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+        });
+    </script>
+    <title>NP-Examples</title>
 </head>
 <body>
 
-<p style="text-align: center;">
-    <a class='pull-left title' href="index.html"><img src="image/Title.png" width="20%"></a><br>
-    <a href=NP_example/3Color.html>3-Graph Coloring Problem<br><a>
-    3-CNF SAT<br>
-    해밀턴 그래프<br>
+<div id = "jb-container">
+    <div id="jb-header">
+        <center><a href="index.html"><img src="image/Title.png" width="30%"></a></center><br>
+    </div>
+    <div id="jb-content">
+        <p style="text-align: center;">
 
-</p>
-<a class='pull-left title' href="menu.html"><img src="image/back_button.png" width="5%"></a><br>
+            <a href=NP_example/3Color.html>3-Graph Coloring Problem<br></a>
+            <a href=NP_example/3CNF.html>3 CNF SAT<br></a>
+            <a href=NP_example/Hamilton.html>Hamiltonian Circuit<br></a>
+        </p>
+        <a class='pull-left title' href="menu.html"><img src="image/back_button.png" width="10%"></a><br>
+    </div>
+    <div id = "jb-sidebar">
+    </div>
+    <div id ="jb-footer"></div>
+</div>
 </body>
 </html>

@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $("#jb-sidebar").load("SideBar.html");  // 원하는 파일 경로를 삽입하면 된다
+            $("#jb-footer").load("footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+        });
+    </script>
+
     <title>NP-Definition</title>
 </head>
 <body>
@@ -13,6 +23,8 @@
         document.all['divpop'].style.visibility = "hidden";
     }
 </script>
+
+<!--팝부분-->
 <div id="divpop" style="position:absolute;left:500px;top:190px;z-index:200; visibility: hidden;">
     <table width=300 height=400 cellpadding=2 cellspacing=0>
         <tr>
@@ -27,15 +39,22 @@
         </tr>
     </table>
 </div>
-<p style="text-align: center;">
 
-    <a class='pull-left title' href="index.html"><img src="image/Title.png" width="20%"></a><br>
-    NP는 맞는 답을 주면, 그것이 맞다는 것의 검증이 효율적으로 이루어진다.<br>
-    NP에는 P와 NPC가 포함되어 있으며 P와 NP가 같은지는 밝혀지지 않았다.<br><br>
-    NP는 <a href="javascript:openWin();">결정문제</a>를 다룬다.<br>
-
-   <br> <a ><img src="image/np_structure.png" width="20%"></a><br>
-</p>
-<a class='pull-left title' href="menu.html"><img src="image/back_button.png" width="5%"></a><br>
+<!--팝부분 -->
+<div id = "jb-container">
+    <div id="jb-header">
+        <center><a href="index.html"><img src="image/Title.png" width="30%"></a></center><br>
+    </div>
+    <div id="jb-content">
+        NP는 맞는 답을 주면, 그것이 맞다는 것의 검증이 효율적으로 이루어진다.<br>
+        NP에는 P와 NPC가 포함되어 있으며 P와 NP가 같은지는 밝혀지지 않았다.<br> <br>
+        NP는 <a href="javascript:openWin();">결정문제</a>를 다룬다.<br>
+        <br><center><img src="image/np_structure.png" width="60%"></center><br>
+        <a class='pull-left title' href="menu.html"><img src="image/back_button.png" width="10%"></a><br>
+    </div>
+    <div id = "jb-sidebar">
+    </div>
+    <div id ="jb-footer"></div>
+</div>
 </body>
 </html>
