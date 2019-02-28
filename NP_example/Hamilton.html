@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../styles.css">
     <meta charset="UTF-8">
-    <title>Hamilton</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $("#jb-sidebar").load("../SideBarD1.html");  // 원하는 파일 경로를 삽입하면 된다
+            $("#jb-footer").load("../footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+        });
+    </script>
+    <title>NP-Examples</title>
 </head>
 <body>
-<p style="text-align: center;">
-    <a class='pull-left title' href="../index.html"><img src="../image/Title.png" width="20%"></a><br>
-    Hamiltonian Circuit<br><br>
 
-    각 변에 가중치가 주어진 완전 그래프가 주어졌을 때, 가장 작은 가중치를 가지는 순환경로를 찾을 수 있는가?
+<div id = "jb-container">
+    <div id="jb-header">
+        <center><a href="../index.html"><img src="../image/Title.png" width="25%"></a></center>
+    </div>
+    <div id="jb-content">
+        <p style="text-align: center;">
+            Hamiltonian Circuit<br><br>
 
-</p>
-<a class='pull-left title' href="../menu.html"><img src="../image/back_button.png" width="5%"></a><br>
+            각 변에 가중치가 주어진 완전 그래프가 주어졌을 때, 가장 작은 가중치를 가지는 순환경로를 찾을 수 있는가?
+        </p>
+        <a class='pull-left title' href="../index.html"><img src="../image/back_button.png" width="10%"></a><br>
+    </div>
+    <div id = "jb-sidebar">
+    </div>
+    <div id ="jb-footer"></div>
+</div>
 </body>
 </html>
